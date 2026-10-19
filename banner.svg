@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="mrzzost">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b14"/>
+      <stop offset="0.5" stop-color="#150d35"/>
+      <stop offset="1" stop-color="#06182a"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f5d4"/>
+      <stop offset="0.5" stop-color="#8b6cff"/>
+      <stop offset="1" stop-color="#ff4ecd"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f5d4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00f5d4" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#00f5d4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0.15" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#8b6cff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#8b6cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0.88" cy="0.85" r="0.6">
+      <stop offset="0" stop-color="#00f5d4" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#00f5d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="0.8" cy="0.1" r="0.4">
+      <stop offset="0" stop-color="#ff4ecd" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff4ecd" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <filter id="blur" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <clipPath id="round"><rect width="1200" height="320" rx="24"/></clipPath>
+    <clipPath id="wipe"><rect x="0" y="0" width="0" height="320"><animate attributeName="width" from="0" to="1200" dur="2.4s" begin="0.4s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code','SF Mono',Consolas,'DejaVu Sans Mono',monospace; }
+    .name   { font-size: 128px; font-weight: 800; letter-spacing: 2px; }
+    .sub    { font-size: 26px; font-weight: 500; fill: #c9d1ff; letter-spacing: 3px; }
+    .cmd    { font-size: 22px; fill: #00f5d4; opacity: .9; }
+    .sym    { font-size: 26px; fill: #ffffff; opacity: .16; font-weight: 700; }
+    .blink  { animation: blink 1s steps(1) infinite; }
+    .glow   { animation: pulse 4s ease-in-out infinite; }
+    .scan   { animation: scan 6s linear infinite; }
+    .f1 { animation: float 6s ease-in-out infinite; }
+    .f2 { animation: float 7.5s ease-in-out infinite reverse; }
+    .f3 { animation: float 5s ease-in-out infinite; animation-delay: -2s; }
+    .border { stroke-dasharray: 18 14; animation: dash 3s linear infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: .95; } }
+    @keyframes scan  { from { transform: translateX(-320px); } to { transform: translateX(1500px); } }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+    @keyframes dash  { to { stroke-dashoffset: -64; } }
+  </style>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#g1)"/>
+    <rect width="1200" height="320" fill="url(#g2)"/>
+    <rect width="1200" height="320" fill="url(#g3)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+
+    <rect class="scan" x="0" y="0" width="320" height="320" fill="url(#scan)"/>
+
+    <!-- floating code symbols -->
+    <g class="f1"><text class="sym" x="70"  y="90">{ }</text></g>
+    <g class="f2"><text class="sym" x="150" y="270">fn main()</text></g>
+    <g class="f3"><text class="sym" x="990" y="80">#include</text></g>
+    <g class="f1"><text class="sym" x="1060" y="270">def run():</text></g>
+    <g class="f2"><text class="sym" x="40"  y="190">&lt;/&gt;</text></g>
+    <g class="f3"><text class="sym" x="1120" y="175">::</text></g>
+    <g class="f1"><text class="sym" x="880" y="40">-&gt;</text></g>
+    <g class="f2"><text class="sym" x="300" y="45">0x7F</text></g>
+
+    <!-- terminal line -->
+    <text class="cmd" x="600" y="78" text-anchor="middle">$ whoami<tspan class="blink">_</tspan></text>
+
+    <!-- name with glow -->
+    <text class="name glow" x="600" y="205" text-anchor="middle" fill="url(#txt)" filter="url(#blur)">mrzzost</text>
+    <text class="name" x="600" y="205" text-anchor="middle" fill="url(#txt)">mrzzost</text>
+
+    <!-- subtitle revealed with a wipe -->
+    <g clip-path="url(#wipe)">
+      <text class="sub" x="600" y="258" text-anchor="middle">PYTHON  •  C++  •  RUST</text>
+    </g>
+  </g>
+
+  <rect class="border" x="2" y="2" width="1196" height="316" rx="23" fill="none" stroke="url(#txt)" stroke-width="2" stroke-opacity="0.7"/>
+</svg>
