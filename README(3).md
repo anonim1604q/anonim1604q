@@ -52,40 +52,12 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f5d4,50:8b6cff,100:ff4ecd&height=3&section=header" width="100%" alt=""/>
 </div>
 
-<h2 align="center">🚀 Featured project</h2>
 
-<div align="center">
-
-<a href="https://github.com/mrzzost/dupehunter">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=mrzzost&repo=dupehunter&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f5d4&icon_color=8b6cff" alt="dupehunter"/>
-</a>
-
-</div>
 
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f5d4,50:8b6cff,100:ff4ecd&height=3&section=header" width="100%" alt=""/>
 </div>
 
-<h2 align="center">📊 GitHub stats</h2>
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=mrzzost&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f5d4&icon_color=8b6cff&count_private=true" alt="Stats"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mrzzost&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00f5d4" alt="Top languages"/>
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=mrzzost&theme=tokyonight&hide_border=true&background=0d1117&ring=8b6cff&fire=ff4ecd&currStreakLabel=00f5d4" alt="Streak"/>
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=mrzzost&theme=onedark&no-frame=true&no-bg=true&margin-w=12&column=7" alt="Trophies"/>
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=mrzzost&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00f5d4&line=8b6cff&point=ff4ecd&area=true" width="100%" alt="Activity graph"/>
-
-</div>
 
 <!--
 Contacts (uncomment and edit):
